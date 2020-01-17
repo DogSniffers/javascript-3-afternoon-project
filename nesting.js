@@ -76,7 +76,15 @@ var workplaceAccidents = [12, 56, 44, 3, 29, 56, 56, 3, 7, 12];
 */
 
 function removeDuplicates(){
-  
+  for(i=0; i < workplaceAccidents.length; i++) {
+    for(j= i + 1; j < workplaceAccidents.length; j++) {
+      if(workplaceAccidents[i] === workplaceAccidents[j]) {
+        workplaceAccidents.splice(i, 1);
+      }
+    }
+  }
+  return workplaceAccidents;
+
 }
 
 
