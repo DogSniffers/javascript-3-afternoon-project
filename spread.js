@@ -10,6 +10,7 @@
 
 /* Use the spread operator to create a copy of the product object below.  Name the copy "productCopy" */
 
+
 let product = {
   id: 54, 
   name: 'santa hat',
@@ -17,8 +18,8 @@ let product = {
   imageUrl: 'https://i.ebayimg.com/images/g/9T4AAOSwbmdZf2jN/s-l640.jpg'
 }
 
-// code here
-
+let productCopy = {...product}
+ 
 
 
 
@@ -30,7 +31,7 @@ let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 
 // code here
 
-
+let colorsCopy = {...colors}
 
 
 ////////// PROBLEM 3 //////////
